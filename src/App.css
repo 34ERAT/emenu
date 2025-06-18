@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-primary: "Open Sans", sans-serif;
+  --color-primary-black: #000000;
+  --color-light-white: #eeeeee;
+  --color-orange: #dc5f00;
+  --color-red: #cf0a0a;
+}
+html {
+  font-size: 62.5%;
+}
