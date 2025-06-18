@@ -7,6 +7,7 @@
   --font-primary: "Open Sans", sans-serif;
   --color-primary-black: #000000;
   --color-light-white: #eeeeee;
+  --color-white: #ffffff;
   --color-orange: #dc5f00;
   --color-red: #cf0a0a;
   --color-red-alphar: rgba(207, 10, 10, 0.3);
@@ -16,7 +17,10 @@ html {
   font-family: var(--font-primary);
   background: var(--color-light-white);
 }
-
+::selection {
+  background: var(--color-red);
+  color: var(--color-light-white);
+}
 .header {
   font-size: 2rem;
   padding: 1rem 1.5rem;
@@ -48,4 +52,73 @@ html {
 .category-item:hover {
   background: var(--color-red-alphar);
   padding: 0.4rem 0.1rem;
+}
+.menu-listing {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.menu-listing-item {
+  background: var(--color-white);
+  overflow: hidden;
+  width: 25rem;
+  border-radius: 1rem;
+}
+.menu-item-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-item-img img {
+  object-fit: cover;
+  width: 100%;
+}
+.menu-item-discount-rating {
+  background: greenyellow;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+}
+.menu-item-discount {
+  background: var(--color-orange);
+  padding: 0.2rem;
+  width: 4rem;
+  border-bottom-right-radius: 1.5rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.menu-item-rating {
+  background: var(--color-white);
+  padding: 0.3rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: center;
+}
+.menu-item-name-description-price {
+  padding: 0.5rem 1rem;
+}
+.menu-item-name {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.4rem;
+}
+.menu-item-description {
+  font-size: 1.2rem;
+}
+.menu-item-price {
+  color: var(--color-red);
+  font-weight: 600;
+  font-size: 2rem;
 }
