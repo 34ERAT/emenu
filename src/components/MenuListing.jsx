@@ -6,11 +6,13 @@ function MenuListingItem({ img, name, description, price, discount, rating }) {
       <div className="menu-item-img">
         <img src={img} />
         <div className="menu-item-discount-rating">
-          <p className="menu-item-discount">{discount}%</p>
-          <p className="menu-item-rating">
-            <IoMdStar />
-            {rating}
-          </p>
+          {discount > 0 && <p className="menu-item-discount">{discount}%</p>}
+          {rating > 0 && (
+            <p className="menu-item-rating">
+              <IoMdStar />
+              {rating}
+            </p>
+          )}
         </div>
       </div>
       <div className="menu-item-name-description-price">

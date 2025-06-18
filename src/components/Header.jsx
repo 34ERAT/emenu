@@ -2,6 +2,7 @@ import { FaChampagneGlasses } from "react-icons/fa6";
 import { GiHotSpices, GiWrappedSweet } from "react-icons/gi";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { LuPizza, LuSalad } from "react-icons/lu";
+import { TiThMenu } from "react-icons/ti";
 
 function MenuCategoryItem({ name, icon }) {
   return (
@@ -16,6 +17,9 @@ function MenuCategoryItem({ name, icon }) {
 function Header() {
   return (
     <header className="header">
+      <div className="header-hamber">
+        <TiThMenu />
+      </div>
       <div className="header-menucategory">
         <MenuCategoryItem name="All" icon={<IoFastFoodOutline />} />
         <MenuCategoryItem name="Drinks" icon={<FaChampagneGlasses />} />

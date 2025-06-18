@@ -23,14 +23,18 @@ html {
 }
 .header {
   font-size: 2rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: capitalize;
   font-weight: 600;
 }
-
+.header-hamber {
+  display: none;
+  font-size: 4rem;
+  font-weight: 200rem;
+}
 .header-menucategory {
   display: flex;
   gap: 1.5rem;
@@ -54,10 +58,10 @@ html {
   padding: 0.4rem 0.1rem;
 }
 .menu-listing {
-  padding: 1rem 1.5rem;
+  padding: 1rem 4rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
   width: 100%;
 }
@@ -65,7 +69,7 @@ html {
 .menu-listing-item {
   background: var(--color-white);
   overflow: hidden;
-  width: 25rem;
+  width: 40rem;
   border-radius: 1rem;
 }
 .menu-item-img {
@@ -73,13 +77,15 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .menu-item-img img {
   object-fit: cover;
+  object-position: center;
   width: 100%;
+  height: 30rem;
 }
 .menu-item-discount-rating {
-  background: greenyellow;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -108,11 +114,12 @@ html {
 }
 .menu-item-name-description-price {
   padding: 0.5rem 1rem;
+  text-transform: capitalize;
 }
 .menu-item-name {
   font-size: 2rem;
   font-weight: 600;
-  padding: 0.4rem;
+  padding: 0.4rem 0;
 }
 .menu-item-description {
   font-size: 1.2rem;
@@ -121,4 +128,49 @@ html {
   color: var(--color-red);
   font-weight: 600;
   font-size: 2rem;
+}
+@media screen and (max-width: 1333px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .menu-listing {
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+    /* justify-content: center; */
+  }
+
+  .menu-listing-item {
+    width: 37rem;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .menu-listing-item {
+    width: 34rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .menu-listing-item {
+    width: 31rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-listing {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .menu-listing-item {
+    width: 36rem;
+  }
+  .header-menucategory {
+    display: none;
+  }
+
+  .header-hamber {
+    display: block;
+  }
 }
