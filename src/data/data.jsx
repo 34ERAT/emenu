@@ -1,6 +1,6 @@
 export const data = [
   {
-    img: "../../public/images/king salad.jpg",
+    img: "/images/king salad.jpg",
     name: "king salad",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -9,7 +9,7 @@ export const data = [
     rating: 5,
   },
   {
-    img: "../../public/images/boilde eggs avacado.jpg",
+    img: "/images/boilde eggs avacado.jpg",
     name: "eggs avacado",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -18,7 +18,7 @@ export const data = [
     rating: 4,
   },
   {
-    img: "../../public/images/chicken.jpg",
+    img: "/images/chicken.jpg",
     name: "chicken",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -28,7 +28,7 @@ export const data = [
   },
 
   {
-    img: "../../public/images/mixfood.jpg",
+    img: "/images/mixfood.jpg",
     name: "mixfood",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -37,7 +37,7 @@ export const data = [
     rating: 4,
   },
   {
-    img: "../../public/images/falvorcakepieace.jpg",
+    img: "/images/falvorcakepieace.jpg",
     name: "falvorcake",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -56,7 +56,7 @@ export const data = [
   },
 
   {
-    img: "../../public/images/collorcookies.jpg",
+    img: "/images/collorcookies.jpg",
     name: "cookie",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -66,7 +66,7 @@ export const data = [
   },
 
   {
-    img: "../../public/images/hambagger.jpg",
+    img: "/images/hambagger.jpg",
     name: "hambagger king",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -75,7 +75,7 @@ export const data = [
     rating: 4,
   },
   {
-    img: "../../public/images/fuirtsalad.jpg",
+    img: "/images/fuirtsalad.jpg",
     name: "fuirtsalad",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -85,7 +85,7 @@ export const data = [
   },
 
   {
-    img: "../../public/images/smileybread.jpg",
+    img: "/images/smileybread.jpg",
     name: "smileybread",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -94,7 +94,7 @@ export const data = [
     rating: 0,
   },
   {
-    img: "../../public/images/creamfood.jpg",
+    img: "/images/creamfood.jpg",
     name: "creamfood",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
@@ -103,7 +103,7 @@ export const data = [
     rating: 10,
   },
   {
-    img: "../../public/images/chipsBugger.jpg",
+    img: "/images/chipsBugger.jpg",
     name: "chipsBugger",
     description:
       "t is a long established fact that a reader will be distracted by the readable content o",
